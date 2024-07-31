@@ -1,21 +1,24 @@
+import java.util.Scanner;
 public class Grade {
-     static void main(String[] args) {
+    public static void main(String[] args) {
+        System.out.println("Enter mark");
+        Scanner sc = new Scanner(System.in);
+        int mark = sc.nextInt();
+        if (mark >500) {
+            System.out.println("the maximum mark is 500");
+        } else if (mark>=450 && mark<=500){
+            System.out.println("grade is A");
+        } else if (mark>=400&&mark<450){
+            System.out.println("Grade is B");
 
-
-        int mark = 349;
-        if(mark==500){
-        if (mark>450&&mark>=500){
-            System.out.println("Grade A");
-        } else if (mark<=450&&mark>400) {
-            System.out.println("Grade B");
-
-        } else if (mark>=400&&mark<350) {
-            System.out.println("Grade c");
+        } else if (mark>=300) {
+            System.out.println("Grade is c");
 
         }
         else {
-            System.out.println("fail");
+            System.out.println("Fail");
         }
+
+
     }
-}
-}
+    }
