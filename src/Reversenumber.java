@@ -1,6 +1,8 @@
+import java.util.Scanner;
 public class Reversenumber {
     public static void main(String[] args) {
-        int number=45874;
+        Scanner sc=new Scanner(System.in);
+        int number=sc.nextInt();
         int rev=0;
         while (number>0){
             int digit=number%10;
