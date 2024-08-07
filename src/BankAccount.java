@@ -2,6 +2,12 @@ public class BankAccount {
     protected String accountnumber;
     protected double balance=0;
     double amount;
+
+    public BankAccount(String accountnumber, double balance) {
+        this.accountnumber=accountnumber;
+        this.balance=balance;
+    }
+
     public double deposite(double amount){
         balance+=amount;
         System.out.println("Balance amount"+balance);
