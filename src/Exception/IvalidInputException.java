@@ -10,7 +10,7 @@ public class IvalidInputException {
             System.out.println("The Input is:"+input);
         }
         catch (InputMismatchException a){
-            System.out.println("Enter the valid Input:"+a);
+            System.err.println("Enter the valid Input:"+a);
 
         }
     }
