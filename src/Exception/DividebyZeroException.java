@@ -1,5 +1,5 @@
 package Exception;
-public class BasicException {
+public class DividebyZeroException {
     public static void main(String[] args) {
         int number1=5;
         int number2=0;
@@ -9,7 +9,7 @@ public class BasicException {
         }
         catch (ArithmeticException e)
         {
-            System.out.println("Using Zero you can't divide"+e);
+            System.err.println("Using Zero you can't divide"+e);
         }
     }
 }
