@@ -1,8 +1,7 @@
 package PrintNumbersInWords;
 import java.util.Scanner;
 public class NumbersIntoWords {
-
-        public void checkNumbers(int valueofnumber, String suffix) {
+    public void checkNumbers(int valueofnumber, String suffix) {
             String[] singleanddoubledigits = {"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
             String[] tens = {"", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
             if (valueofnumber > 19) {
