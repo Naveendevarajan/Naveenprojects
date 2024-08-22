@@ -17,8 +17,8 @@ public class sumOfFirstAndLastDigit {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         System.out.println("Enter a Number:");
-        int inputnumber=scanner.nextInt();
+        int inputNumber=scanner.nextInt();
         sumOfFirstAndLastDigit sumoffirstandlastdigit=new sumOfFirstAndLastDigit();
-        System.out.println(sumoffirstandlastdigit.sumFirstAndLastDigit(inputnumber));
+        System.out.println(sumoffirstandlastdigit.sumFirstAndLastDigit(inputNumber));
     }
 }
