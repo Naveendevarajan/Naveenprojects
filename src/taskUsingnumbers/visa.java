@@ -5,12 +5,17 @@ public abstract class visa {
     String ccv;
     Date expiryDate;
     String aacountHolder;
-    String cardNumber;
-    double balance=10000;
+    String hdfccardnumber ="HDFC123";
+    int hdfcpin=5677;
+    String stateBankOfIndiacardnumber="STATEBANK123";
+    int stateBankOfIndiapin=4321;
+    String unionBankcardnumber="UNIONBANK123";
+    int unionBankpin=1234;
     protected abstract boolean authenticate(String cardNumber,int pin);
     protected abstract double getbalance();
 
     public double withdraw(double requestedamount){
+        double balance=getbalance();
         if(balance>=requestedamount){
             balance= balance-requestedamount;
             System.out.println("The  amount requested"+requestedamount);

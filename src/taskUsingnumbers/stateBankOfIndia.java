@@ -1,9 +1,7 @@
 package taskUsingnumbers;
 
 public class stateBankOfIndia extends visa{
-    String stateBankOfIndiacardnumber="STATEBANK123";
-    int stateBankOfIndiapin=4321;
-    double balance;
+    double balance=10000;
 
     @Override
     protected boolean authenticate(String cardNumber, int pin) {
@@ -19,6 +17,7 @@ public class stateBankOfIndia extends visa{
     }
     @Override
     protected double getbalance() {
+
         return balance;
     }
 }

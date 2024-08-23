@@ -1,8 +1,7 @@
 package taskUsingnumbers;
 
 public class unionBank extends visa {
-    String unionBankcardnumber="UNIONBANK123";
-    int unionBankpin=1234;
+    double balance=10000;
     @Override
     protected boolean authenticate(String cardNumber, int pin) {
 
@@ -10,7 +9,6 @@ public class unionBank extends visa {
     }
     public void withdrawprocess(String cardNumber,int pin,double requestedamount){
         if(authenticate(cardNumber,pin)){
-            withdraw(requestedamount);
         }
         else
             System.out.println("Authentication Failed:");
@@ -18,5 +16,6 @@ public class unionBank extends visa {
     @Override
     protected double getbalance() {
         return balance;
+
     }
 }

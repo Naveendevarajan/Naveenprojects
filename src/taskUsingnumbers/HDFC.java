@@ -1,8 +1,7 @@
 package taskUsingnumbers;
 
 public class HDFC extends visa{
-    String hdfccardnumber ="HDFC123";
-    int hdfcpin=5677;
+    double balance=10000;
     @Override
     protected boolean authenticate(String cardNumber, int pin) {
         return cardNumber.equals(hdfccardnumber)&&pin==hdfcpin;
@@ -16,6 +15,6 @@ public class HDFC extends visa{
     }
     @Override
     protected double getbalance() {
-        return 0;
+        return balance;
     }
 }
