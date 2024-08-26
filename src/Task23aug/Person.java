@@ -1,16 +1,14 @@
 package Task23aug;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.time.Period;
 
-public class person extends contact{
+public class Person extends Contact {
 
     LocalDate localDate=LocalDate.of(1990,12,12);
     public int calculatingAge(){
         LocalDate currentDate=LocalDate.now();
-        if(currentDate!=null && localDate!=null )
-            return
+            return Period.between(localDate,currentDate).getYears();
     }
 
 }
