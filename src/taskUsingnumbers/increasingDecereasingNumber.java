@@ -1,7 +1,7 @@
 package taskUsingnumbers;
 import java.util.Scanner;
 public class increasingDecereasingNumber {
-    public void checkincreasingOrDecreasing(int number1,int number2,int number3){
+    public void checkIncreasingOrDecreasing(int number1, int number2, int number3){
         if(number1>number2 &&number2>number3 )
             System.out.println("The given numbers are in Descending order:");
         else if (number1<number2 && number2<number3 )
@@ -17,6 +17,6 @@ public class increasingDecereasingNumber {
         int number2=scanner.nextInt();
         int number3=scanner.nextInt();
         increasingDecereasingNumber increasingdecreasingnumber=new increasingDecereasingNumber();
-        increasingdecreasingnumber.checkincreasingOrDecreasing(number1,number2,number3);
+        increasingdecreasingnumber.checkIncreasingOrDecreasing(number1,number2,number3);
     }
 }
