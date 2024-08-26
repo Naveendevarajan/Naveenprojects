@@ -13,7 +13,7 @@ public class Mainvisa {
             int unionbankcardpin = scanner.nextInt();
             System.out.println("Enter withdraw amount :");
             double withdrawamount = scanner.nextInt();
-            unionBank.withdrawprocess(unionbankcardnumber, unionbankcardpin, withdrawamount);
+            unionBank.withDrawProcess(unionbankcardnumber, unionbankcardpin, withdrawamount);
         } else if (bankname.equalsIgnoreCase("HDFC")) {
             HDFC hdfcbank = new HDFC();
             System.out.println("Enter HDFC bank card number :");
@@ -22,7 +22,7 @@ public class Mainvisa {
             int hdfcbankcardpin = scanner.nextInt();
             System.out.println("Enter withdraw amount :");
             double withdrawamount = scanner.nextInt();
-            hdfcbank.withdrawprocess(hdfcbankcardnumber,hdfcbankcardpin,withdrawamount);
+            hdfcbank.withDrawProcess(hdfcbankcardnumber,hdfcbankcardpin,withdrawamount);
         }
         else if (bankname.equalsIgnoreCase("HDFC")){
             stateBankOfIndia stateBankOfIndia=new stateBankOfIndia();
@@ -32,7 +32,7 @@ public class Mainvisa {
             int statebankofindiacardpin = scanner.nextInt();
             System.out.println("Enter withdraw amount :");
             double withdrawamount = scanner.nextInt();
-            stateBankOfIndia.withdrawprocess(statebankofindiacardnumber, statebankofindiacardpin,withdrawamount);
+            stateBankOfIndia.withDrawProcess(statebankofindiacardnumber, statebankofindiacardpin,withdrawamount);
         }
         else
             System.out.println("Enter the correct Bank Number");

@@ -1,12 +1,12 @@
 package taskUsingnumbers;
 
-public class HDFC extends visa{
+public class HDFC extends Visa {
     double balance=10000;
     @Override
     protected boolean authenticate(String cardNumber, int pin) {
-        return cardNumber.equals(hdfccardnumber)&&pin==hdfcpin;
+        return cardNumber.equals(hdfccardnumber)&&pin== hdfcPin;
     }
-    public void withdrawprocess(String cardNumber,int pin,double requestedamount){
+    public void withDrawProcess(String cardNumber, int pin, double requestedamount){
         if(authenticate(cardNumber,pin)){
             withdraw(requestedamount);
         }
@@ -14,7 +14,7 @@ public class HDFC extends visa{
             System.out.println("Authentication Failed:");
     }
     @Override
-    protected double getbalance() {
+    protected double getBalance() {
         return balance;
     }
 }

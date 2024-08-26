@@ -1,6 +1,6 @@
 package taskUsingnumbers;
 
-public class stateBankOfIndia extends visa{
+public class stateBankOfIndia extends Visa {
     double balance=10000;
 
     @Override
@@ -8,7 +8,7 @@ public class stateBankOfIndia extends visa{
         return cardNumber.equals(stateBankOfIndiacardnumber)&&pin==stateBankOfIndiapin;
 
     }
-    public void withdrawprocess(String cardNumber,int pin,double requestedamount){
+    public void withDrawProcess(String cardNumber, int pin, double requestedamount){
         if(authenticate(cardNumber,pin)){
             withdraw(requestedamount);
         }
@@ -16,7 +16,7 @@ public class stateBankOfIndia extends visa{
             System.out.println("Authentication Failed:");
     }
     @Override
-    protected double getbalance() {
+    protected double getBalance() {
 
         return balance;
     }
