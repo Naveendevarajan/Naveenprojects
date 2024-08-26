@@ -12,4 +12,9 @@ public class pass {
 
     }
 
+    public static class boostCompany {
+
+        int boostMRP=100;
+        int boostSellingPrice=80;
+    }
 }
