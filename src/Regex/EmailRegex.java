@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 public class EmailRegex {
     void isValidEmail(String eMail){
-        String validRegex="([\\w._]+@[\\w]+.[A-Z a-z]{2,3})";
+        String validRegex="(\\w._]+@[\\w]+.[A-Z a-z]{2,3})";
         Pattern p = Pattern.compile(validRegex);
         Matcher matcher = p.matcher(eMail);
 
