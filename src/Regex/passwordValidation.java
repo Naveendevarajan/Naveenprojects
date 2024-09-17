@@ -59,6 +59,6 @@ public class passwordValidation {
     }
     public static void main(String[] args) {
         passwordValidation passwordValidation = new passwordValidation();
-        passwordValidation.isValidPassword("abmsctyuionqxz");
+        passwordValidation.isValidPassword("Aa1Aa1AaAaAa#");
     }
 }
