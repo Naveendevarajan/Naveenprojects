@@ -24,6 +24,7 @@ public class EmailRegex {
         Scanner scanner = new Scanner(System.in);
         String email = scanner.nextLine();
         emailRegex.isValidEmail(email);
+        System.out.println();
 
     }
 
