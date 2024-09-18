@@ -1,10 +1,10 @@
 package Map;
 
-import java.util.HashMap;
+import java.util.TreeMap;
 
 public class getKeys {
     public static void main(String[] args) {
-        HashMap<String,String> studentDetails = new HashMap<>();
+        TreeMap<String,String> studentDetails = new TreeMap<>();
         studentDetails.put("name","Naveen");
         studentDetails.put("Phone No","7810000928");
         studentDetails.put("email","naveendevarajan4@gmail.com");
