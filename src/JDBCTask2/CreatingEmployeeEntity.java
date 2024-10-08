@@ -2,7 +2,7 @@ package JDBCTask2;
 
 public class CreatingEmployeeEntity {
 
-    public int employeeId;
+    public String employeeId;
     public String firstName;
     public String lastName;
     public String middleName;
@@ -10,12 +10,12 @@ public class CreatingEmployeeEntity {
     public String gender;
     public String emailAddress;
     public String phoneNo;
-    public String address;
+    public Address address;
 
 
-    public CreatingEmployeeEntity( int employeeId,String firstName,String lastName,
+    public CreatingEmployeeEntity( String employeeId,String firstName,String lastName,
                                    String middleName,String dateOfBirth,String gender,
-                                   String emailAddress,String phoneNo,String address){
+                                   String emailAddress,String phoneNo,Address address){
         this.employeeId = employeeId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -36,8 +36,9 @@ public class CreatingEmployeeEntity {
     }
 
     public static void main(String[] args) {
-        CreatingEmployeeEntity creatingEmployeeEntity = new CreatingEmployeeEntity(21,"D","Naveen"," Devarajan","16-09-2004",
-                "Male","Naveendeva4@gamil.com","7810000928","2/19 First cross St kpm");
+        Address address = new Address("2/19 first cross Street","kanchipuram","631 501");
+        CreatingEmployeeEntity creatingEmployeeEntity = new CreatingEmployeeEntity("CI21","D","Naveen"," Devarajan","16-09-2004",
+                "Male","Naveendeva4@gamil.com","7810000928",address);
         System.out.println(creatingEmployeeEntity);
     }
 }
