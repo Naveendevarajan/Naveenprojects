@@ -1,8 +1,5 @@
 package JDBCTask2;
 
-import java.util.Date;
-
-;
 public class CreatingEmployeeEntity {
 
     public int employeeId;
