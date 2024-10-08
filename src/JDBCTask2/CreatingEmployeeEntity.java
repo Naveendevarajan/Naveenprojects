@@ -36,7 +36,7 @@ public class CreatingEmployeeEntity {
     }
 
     public static void main(String[] args) {
-        Address address = new Address("2/19 first cross Street","kanchipuram","631 501");
+        Address address = new Address("2/19 first cross Street","Gurusamy Nagar sevilimedu","Kanchipuram","Tamil nadu","631 501");
         CreatingEmployeeEntity creatingEmployeeEntity = new CreatingEmployeeEntity("CI21","D","Naveen"," Devarajan","16-09-2004",
                 "Male","Naveendeva4@gamil.com","7810000928",address);
         System.out.println(creatingEmployeeEntity);
