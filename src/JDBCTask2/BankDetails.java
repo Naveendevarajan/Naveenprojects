@@ -15,7 +15,7 @@ public class BankDetails {
 
     @Override
     public String toString() {
-        return "Bank Name:"+bankName+"Branch:"+branch+
-                "Account Number:"+accountNumber+"Account Holder Number:"+accountHolderName;
+        return "\nBank Name:"+bankName+"\nBranch:"+branch+
+                "\nAccount Number:"+accountNumber+"\nAccount Holder Name:"+accountHolderName;
     }
 }

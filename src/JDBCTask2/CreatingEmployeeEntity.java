@@ -158,7 +158,7 @@ public class CreatingEmployeeEntity {
 
     @Override
     public String toString() {
-        return "\nemployeeId:" + employeeId +
+        return  "\nemployeeId:" + employeeId +
                 " \nfirstName:" + firstName +
                 " \nlastName:" + lastName +
                 " \nmiddleName:" + middleName +
@@ -174,13 +174,13 @@ public class CreatingEmployeeEntity {
                 " \nemployment_Status:" + employment_Status +
                 " \nsalary:" + salary +
                 " \nwork_Location:" + work_Location +
-                " \npan_Number:'" + pan_Number +
+                " \npan_Number:" + pan_Number +
                 " \naadhaar_Number:" + aadhaar_Number +
-                " \nbank_Account_Details:" + bank_Account_Details +
+                " \nBANK DETAILS" + bank_Account_Details +
                 " \nemployment_Eligibility_Verification:" + employment_Eligibility_Verification +
                 " \nbackground_Check_Status:" + background_Check_Status +
                 " \nemergency_Contact:" + emergency_Contact +
-                " \nskills:'" + skills +
+                " \nskills:" + skills +
                 " \neducation:" + education +
                 " \ncertifications:" + certifications +
                 " \nperformance:" + performance ;
